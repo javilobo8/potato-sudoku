@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      #suduku-grid {
+        border: 2px solid black;
+        display: absolute;
+        background: black;
+        margin: auto;
+      }
+      .sudoku-cell {
+        background: white;
+        border: 1px solid black;
+        float: left;
+        text-align: center;
+        font-size: 20px;
+        vertical-align: middle;
+        cursor: pointer;
+      }
+      .sudoku-cell:hover {
+        background: #DDD;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          </br>
+          <div class="panel panel-default">
+            <div class="panel-heading text-center" id="result">Sudoku</div>
+            <div class="panel-body">
+              <div id="suduku-grid"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="sudokus.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
